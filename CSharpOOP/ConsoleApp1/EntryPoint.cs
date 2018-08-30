@@ -1,25 +1,20 @@
-﻿public class Warrior
-{
-    public int height;
-    public int weight;
-        
-}
+﻿using Characters;
+using System;
 
-public class EntryPoint
-{
-    static void Main()
+    public class EntryPoint
     {
-        Warrior theGoodGuy = new Warrior();
-        theGoodGuy.height = 190;
-        theGoodGuy.weight = 80;
+        static void Main()
+        {
+            Warrior theGoodGuy = new Warrior(190, 80, "Good guy");
 
-        Warrior theBadGuy = new Warrior();
-        theBadGuy.height = 170;
-        theBadGuy.weight = 90;
+            Warrior theBadGuy = new Warrior(170, 90, "Bad Guy");
 
-        System.Console.WriteLine(theGoodGuy.height);
-        System.Console.WriteLine(theBadGuy.height);
+            Console.WriteLine(theGoodGuy.Height);
+            Console.WriteLine(theBadGuy.Height);
+
+            theGoodGuy.Greetings(theBadGuy);
+            theBadGuy.Greetings(theGoodGuy);
 
 
+        }
     }
-}
