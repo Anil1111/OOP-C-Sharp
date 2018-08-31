@@ -8,5 +8,11 @@ namespace MagicDestroyers.Equipment.Armors
 {
     public class ClothRobe
     {
+        private int armorPoints;
+
+        public ClothRobe()
+        {
+
+        }
     }
 }

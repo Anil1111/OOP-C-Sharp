@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MagicDestroyers.Equipment.Armors;
+using MagicDestroyers.Equipment.Weapons;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,35 @@ namespace MagicDestroyers.Characters.Melee
 {
     public class Knight
     {
+        private int abilityPoints;
+        private int healthPoints;
+        private int level;
+
+        private string faction;
+        private string name;
+
+        private Chainlink bodyArmor;
+        private Axe weapon;
+
+        public Knight()
+        {
+
+        }
+
+        public void HolyBlow()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void PurifySoul()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RighteousWings()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
+

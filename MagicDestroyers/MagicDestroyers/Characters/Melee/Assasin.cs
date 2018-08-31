@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MagicDestroyers.Characters.SpellCaster
+namespace MagicDestroyers.Characters.Melee
 {
-    public class Druid
+    public class Assasin
     {
         private int abilityPoints;
         private int healthPoints;
@@ -20,22 +20,22 @@ namespace MagicDestroyers.Characters.SpellCaster
         private Chainlink bodyArmor;
         private Axe weapon;
 
-        public Druid()
+        public Assasin()
         {
 
         }
 
-        public void Moonfire()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Starburst()
+        public void Raze()
         {
             throw new NotImplementedException();
         }
 
-        public void OneWithNature()
+        public void BleedToDeath()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Survival()
         {
             throw new NotImplementedException();
         }

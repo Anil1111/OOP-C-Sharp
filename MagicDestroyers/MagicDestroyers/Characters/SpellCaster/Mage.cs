@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MagicDestroyers.Equipment.Armors;
+using MagicDestroyers.Equipment.Weapons;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,35 @@ namespace MagicDestroyers.Characters.SpellCaster
 {
     public class Mage
     {
+        private int abilityPoints;
+        private int healthPoints;
+        private int level;
+
+        private string faction;
+        private string name;
+
+        private Chainlink bodyArmor;
+        private Axe weapon;
+
+        public Mage()
+        {
+
+        }
+
+        public void ArcaneWrath()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Firewall()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Meditation()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
+

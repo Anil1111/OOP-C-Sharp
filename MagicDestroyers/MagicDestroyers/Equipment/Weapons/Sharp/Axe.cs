@@ -8,5 +8,15 @@ namespace MagicDestroyers.Equipment.Weapons
 {
     public class Axe
     {
+        private int damage;
+
+        public Axe()
+        {
+
+        }
+        public void HackNSlash()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
