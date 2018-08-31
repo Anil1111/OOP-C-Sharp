@@ -17,8 +17,8 @@ namespace MagicDestroyers.Characters.SpellCaster
         private string faction;
         private string name;
 
-        private Chainlink bodyArmor;
-        private Axe weapon;
+        private LightLeatherVest bodyArmor;
+        private Staff weapon;
 
         public Druid()
         {

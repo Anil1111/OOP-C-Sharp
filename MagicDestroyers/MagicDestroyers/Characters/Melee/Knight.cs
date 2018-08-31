@@ -1,5 +1,6 @@
 ﻿using MagicDestroyers.Equipment.Armors;
 using MagicDestroyers.Equipment.Weapons;
+using MagicDestroyers.Equipment.Weapons.Blunt;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace MagicDestroyers.Characters.Melee
         private string name;
 
         private Chainlink bodyArmor;
-        private Axe weapon;
+        private Hammer weapon;
 
         public Knight()
         {

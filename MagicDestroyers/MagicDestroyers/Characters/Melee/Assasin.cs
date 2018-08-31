@@ -17,8 +17,8 @@ namespace MagicDestroyers.Characters.Melee
         private string faction;
         private string name;
 
-        private Chainlink bodyArmor;
-        private Axe weapon;
+        private LightLeatherVest bodyArmor;
+        private Sword weapon;
 
         public Assasin()
         {
