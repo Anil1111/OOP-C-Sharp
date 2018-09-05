@@ -1,14 +1,10 @@
-﻿using MagicDestroyers.Equipment.Armors.Heavy;
-using MagicDestroyers.Equipment.Weapons.Blunt;
+﻿using MagicDestroyers.Equipment.Armors.Leather;
+using MagicDestroyers.Equipment.Weapons.Sharp;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MagicDestroyers.Characters.Melee
 {
-    public class Knight
+    public class Assassin
     {
         private int abilityPoints;
         private int healthPoints;
@@ -17,8 +13,8 @@ namespace MagicDestroyers.Characters.Melee
         private string faction;
         private string name;
 
-        private Chainlink bodyArmor;
-        private Hammer weapon;
+        private LightLeatherVest bodyArmor;
+        private Sword weapon;
 
         public int AbilityPoints
         {
@@ -107,12 +103,12 @@ namespace MagicDestroyers.Characters.Melee
                 }
                 else
                 {
-                    throw new ArgumentException(string.Empty, "The faction should be either Melee or Spellcaster");
+                    throw new ArgumentException(string.Empty, "The faction should be either Melee");
                 }
             }
         }
 
-        public Chainlink BodyArmor
+        public LightLeatherVest BodyArmor
         {
             get
             {
@@ -123,7 +119,7 @@ namespace MagicDestroyers.Characters.Melee
                 bodyArmor = value;
             }
         }
-        public Hammer Weapon
+        public Sword Weapon
         {
             get
             {
@@ -135,22 +131,22 @@ namespace MagicDestroyers.Characters.Melee
             }
         }
 
-        public Knight()
+        public Assassin()
         {
 
         }
 
-        public void HolyBlow()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void PurifySoul()
+        public void Raze()
         {
             throw new NotImplementedException();
         }
 
-        public void RighteousWings()
+        public void BleedToDeath()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Survival()
         {
             throw new NotImplementedException();
         }

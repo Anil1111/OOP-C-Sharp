@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C6251B49-40A2-4196-839A-A53EA2F7187A}</ProjectGuid>
+    <ProjectGuid>{3E182000-A20C-4FC5-96EB-8E57FF360041}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MagicDestroyers</RootNamespace>
-    <AssemblyName>MagicDestroyers</AssemblyName>
+    <RootNamespace>CSharpOOP</RootNamespace>
+    <AssemblyName>CSharpOOP</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <NoWarn>IDE0003, IDE0002</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <NoWarn>IDE0003, IDE0002</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -42,21 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Characters\Melee\Assassin.cs" />
-    <Compile Include="Characters\Melee\Knight.cs" />
-    <Compile Include="Characters\Melee\Warrior.cs" />
-    <Compile Include="Characters\Spellcasters\Druid.cs" />
-    <Compile Include="Characters\Spellcasters\Mage.cs" />
-    <Compile Include="Characters\Spellcasters\Necromancer.cs" />
     <Compile Include="EntryPoint.cs" />
-    <Compile Include="Equipment\Armors\Heavy\Chainlink.cs" />
-    <Compile Include="Equipment\Armors\Leather\LightLeatherVest.cs" />
-    <Compile Include="Equipment\Armors\Light\ClothRobe.cs" />
-    <Compile Include="Equipment\Weapons\Blunt\Hammer.cs" />
-    <Compile Include="Equipment\Weapons\Blunt\Staff.cs" />
-    <Compile Include="Equipment\Weapons\Sharp\Axe.cs" />
-    <Compile Include="Equipment\Weapons\Sharp\Sword.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Characters\Warriors\Warrior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

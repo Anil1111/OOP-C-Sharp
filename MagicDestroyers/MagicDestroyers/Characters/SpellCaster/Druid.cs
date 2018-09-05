@@ -17,6 +17,67 @@ namespace MagicDestroyers.Characters.SpellCaster
         private string faction;
         private string name;
 
+        public int AbilityPoints
+        {
+            get
+            {
+                return abilityPoints;
+            }
+            set
+            {
+                abilityPoints = value;
+            }
+        }
+
+        public int HealthPoints
+        {
+            get
+            {
+                return healthPoints;
+            }
+            set
+            {
+                healthPoints = value;
+            }
+        }
+
+        public int Level
+        {
+            get
+            {
+                return level;
+            }
+            set
+            {
+                level = value;
+            }
+        }
+
+
+        public string Faction
+        {
+            get
+            {
+                return Faction;
+            }
+            set
+            {
+                faction = value;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
         private LightLeatherVest bodyArmor;
         private Staff weapon;
 

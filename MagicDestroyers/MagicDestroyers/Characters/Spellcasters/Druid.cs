@@ -1,14 +1,10 @@
-﻿using MagicDestroyers.Equipment.Armors.Heavy;
+﻿using MagicDestroyers.Equipment.Armors.Leather;
 using MagicDestroyers.Equipment.Weapons.Blunt;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MagicDestroyers.Characters.Melee
+namespace MagicDestroyers.Characters.Spellcasters
 {
-    public class Knight
+    public class Druid
     {
         private int abilityPoints;
         private int healthPoints;
@@ -17,8 +13,8 @@ namespace MagicDestroyers.Characters.Melee
         private string faction;
         private string name;
 
-        private Chainlink bodyArmor;
-        private Hammer weapon;
+        private LightLeatherVest bodyArmor;
+        private Staff weapon;
 
         public int AbilityPoints
         {
@@ -46,13 +42,13 @@ namespace MagicDestroyers.Characters.Melee
             }
             set
             {
-                if (value >= 0 && value <= 120)
+                if (value >= 0 && value <= 100)
                 {
                     healthPoints = value;
                 }
                 else
                 {
-                    throw new ArgumentOutOfRangeException(string.Empty, "Inappropriate value, the value should be >= 0 and <= 120.");
+                    throw new ArgumentOutOfRangeException(string.Empty, "Inappropriate value, the value should be >= 0 and <= 100.");
                 }
             }
         }
@@ -112,7 +108,7 @@ namespace MagicDestroyers.Characters.Melee
             }
         }
 
-        public Chainlink BodyArmor
+        public LightLeatherVest BodyArmor
         {
             get
             {
@@ -123,7 +119,7 @@ namespace MagicDestroyers.Characters.Melee
                 bodyArmor = value;
             }
         }
-        public Hammer Weapon
+        public Staff Weapon
         {
             get
             {
@@ -135,22 +131,22 @@ namespace MagicDestroyers.Characters.Melee
             }
         }
 
-        public Knight()
+        public Druid()
         {
 
         }
 
-        public void HolyBlow()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void PurifySoul()
+        public void Moonfire()
         {
             throw new NotImplementedException();
         }
 
-        public void RighteousWings()
+        public void Starburst()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OneWithTheNature()
         {
             throw new NotImplementedException();
         }
